@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from ann_som_mandist.sci using help_from_sci().
+ *
+ -->
+
+<refentry version="5.0-subset Scilab" xml:id="ann_som_mandist" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:scilab="http://www.scilab.org"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <refnamediv>
+    <refname>ann_som_mandist</refname>
+    <refpurpose>Manhattan distance function.</refpurpose>
+  </refnamediv>
+
+
+<refsynopsisdiv>
+   <title>Calling Sequence</title>
+   <synopsis>
+   neuron_dist=ann_som_mandist(neuron_pos)
+   
+   </synopsis>
+</refsynopsisdiv>
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+   <varlistentry><term>neuron_pos :</term>
+      <listitem><para> neuron positions</para></listitem></varlistentry>
+   <varlistentry><term>neuron_dist :</term>
+      <listitem><para> distances between neurons</para></listitem></varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+This is a distance function used to find the Manhattan distances between neurons.
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+N = [1 2 3; 4 5 6; 7 8 9];
+ann_som_mandist(N)
+
+   ]]></programlisting>
+</refsection>
+
+<refsection>
+   <title>See also</title>
+   <simplelist type="inline">
+   <member><link linkend="ann_som_boxdist">ann_som_boxdist</link></member>
+   <member><link linkend="ann_som_eudist">ann_som_eudist</link></member>
+   <member><link linkend="ann_som_linkdist">ann_som_linkdist</link></member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Chenwei, modified and used in Scilab NN Toolbox by Tan C.L.</member>
+   </simplelist>
+</refsection>
+</refentry>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scilablib name="NeuralNetlib">
+  <macro name="ann_eval_onehot" file="ann_eval_onehot.bin" md5="2698dbcd30f44329acd8196e89d1c186"/>
+  <macro name="ann_imgcrop" file="ann_imgcrop.bin" md5="8337294187b3d060cfc6d24e0ed19fe1"/>
+  <macro name="ann_imgfeatures" file="ann_imgfeatures.bin" md5="dba9a7a2676ffadd686d96792766560e"/>
+  <macro name="ann_imgpreprocess" file="ann_imgpreprocess.bin" md5="277ca394d8992b21ac503ef528d2b84b"/>
+</scilablib>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from ann_FFBP_run.sci using help_from_sci().
+ *
+ -->
+
+<refentry version="5.0-subset Scilab" xml:id="ann_FFBP_run" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <info>
+    <pubdate>$LastChangedDate: 19-Mar-2012 $</pubdate>
+  </info>
+
+  <refnamediv>
+    <refname>ann_FFBP_run</refname><refpurpose>ANN FeedForward Backpropagation Network simulation function</refpurpose>
+  </refnamediv>
+
+
+
+<refsynopsisdiv>
+   <title>Calling Sequence</title>
+   <synopsis>
+   [y] = ann_FFBP_run(W,P,af)
+   
+   </synopsis>
+</refsynopsisdiv>
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+   <varlistentry><term>P :</term>
+      <listitem><para> Testing input</para></listitem></varlistentry>
+   <varlistentry><term>W :</term>
+      <listitem><para> Output Weight and bias</para></listitem></varlistentry>
+   <varlistentry><term>af :</term>
+      <listitem><para> Activation Function</para></listitem></varlistentry>
+   <varlistentry><term>y :</term>
+      <listitem><para> Simulation result</para></listitem></varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+FeedForward Backpropagation simulation/run function to produce predicted output.
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+P = [1 2 3 4; 1 2 3 4];
+T = [1 2 3 4];
+W = ann_FFBP_lm(P,T,[2 3 1]);
+y = ann_FFBP_run(P,W)
+
+   ]]></programlisting>
+</refsection>
+
+<refsection>
+   <title>See also</title>
+   <simplelist type="inline">
+   <member><link linkend="ann_FFBP_gd">ann_FFBP_gd</link></member>
+   <member><link linkend="ann_FFBP_gda">ann_FFBP_gda</link></member>
+   <member><link linkend="ann_FFBP_gdm">ann_FFBP_gdm</link></member>
+   <member><link linkend="ann_FFBP_gdx">ann_FFBP_gdx</link></member>
+   <member><link linkend="ann_FFBP_lm">ann_FFBP_lm</link></member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Tan C.L.</member>
+   </simplelist>
+</refsection>
+</refentry>

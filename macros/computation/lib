@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scilablib name="NeuralNetlib">
+  <macro name="ann_calcjac" file="ann_calcjac.bin" md5="8a008882cdb7d1ea823d46eb8ee5a676"/>
+  <macro name="ann_compet_activ" file="ann_compet_activ.bin" md5="d9deba8095d51fee4bb52addcc0ddd03"/>
+  <macro name="ann_compet_init" file="ann_compet_init.bin" md5="e1fe259abe337401cd4a823e14015ac6"/>
+  <macro name="ann_d_hardlim_activ" file="ann_d_hardlim_activ.bin" md5="afe123ac4679b49e5ae8f54f658c5ac5"/>
+  <macro name="ann_d_logsig_activ" file="ann_d_logsig_activ.bin" md5="de383bfb0adc44ba82d9c25464cefca3"/>
+  <macro name="ann_d_purelin_activ" file="ann_d_purelin_activ.bin" md5="619162a4b8d082a466465b54ed86984c"/>
+  <macro name="ann_d_relu_activ" file="ann_d_relu_activ.bin" md5="ba99f8cbef8091c8d05698a45f6d4c46"/>
+  <macro name="ann_d_softmax_activ" file="ann_d_softmax_activ.bin" md5="43ae20f01a9d46261b7f21289146f752"/>
+  <macro name="ann_d_tansig_activ" file="ann_d_tansig_activ.bin" md5="23efdae3d7c2893fa781690518811e21"/>
+  <macro name="ann_dist" file="ann_dist.bin" md5="9c73f0f19d5e6d945504139cdcee8217"/>
+  <macro name="ann_ffbp_init" file="ann_ffbp_init.bin" md5="90d8737fdf3e3837ce060480754773c2"/>
+  <macro name="ann_gencluster" file="ann_gencluster.bin" md5="d5dbcd82e6a89260cecc622a960c06f2"/>
+  <macro name="ann_hardlim_activ" file="ann_hardlim_activ.bin" md5="d6fbf2f9808bde4e1ecaf89d9892cffd"/>
+  <macro name="ann_logsig_activ" file="ann_logsig_activ.bin" md5="545974ba3c675c7401fccd69e99cde46"/>
+  <macro name="ann_negdist" file="ann_negdist.bin" md5="fa99677061fdb8e82f6eee10d2abebdb"/>
+  <macro name="ann_purelin_activ" file="ann_purelin_activ.bin" md5="39acb061deef1a19778320d8776aa586"/>
+  <macro name="ann_relu_activ" file="ann_relu_activ.bin" md5="a514da5aca7ef39fa89ed0ae8ade0b4c"/>
+  <macro name="ann_softmax_activ" file="ann_softmax_activ.bin" md5="3f3c15c3bcff4f3e311d5e062d22d648"/>
+  <macro name="ann_som_boxdist" file="ann_som_boxdist.bin" md5="42af07e744a7b2c2765a9334df9dcc68"/>
+  <macro name="ann_som_eudist" file="ann_som_eudist.bin" md5="5fd2a1b314b6599d5f4653f381228411"/>
+  <macro name="ann_som_gridtop" file="ann_som_gridtop.bin" md5="9f5399e97a2a6f984ac5a9d50cd6dc37"/>
+  <macro name="ann_som_hextop" file="ann_som_hextop.bin" md5="c4b60937c5d9a73c6eb268b3f37abb38"/>
+  <macro name="ann_som_linkdist" file="ann_som_linkdist.bin" md5="8cd5c4e7066d1ff1ef905e6a79834fcd"/>
+  <macro name="ann_som_mandist" file="ann_som_mandist.bin" md5="15d0cbd4e487441a484e6f9903725ca5"/>
+  <macro name="ann_som_randtop" file="ann_som_randtop.bin" md5="16fb3778f32df60d7b4e74e1b1bd581f"/>
+  <macro name="ann_tansig_activ" file="ann_tansig_activ.bin" md5="c7c06df6a9508263dc540ccbcbbc6be5"/>
+  <macro name="ann_training_process" file="ann_training_process.bin" md5="23af579727f5b4ab633fb14e145fd79b"/>
+</scilablib>

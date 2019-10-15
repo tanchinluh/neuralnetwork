@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scilablib name="NeuralNetlib">
+  <macro name="ann_ADALINE" file="ann_ADALINE.bin" md5="708453bc0ffa3bc579b6645e2da691d5"/>
+  <macro name="ann_ADALINE_online" file="ann_ADALINE_online.bin" md5="cad553be6fa5ffa5be6b0dc27559538a"/>
+  <macro name="ann_ADALINE_predict" file="ann_ADALINE_predict.bin" md5="02e5a891afa9de8414aa94b99f17c297"/>
+  <macro name="ann_ADALINE_run" file="ann_ADALINE_run.bin" md5="52cd12a81dbe606f42c6aba5e9cb508b"/>
+  <macro name="ann_COMPET" file="ann_COMPET.bin" md5="88fd60504827c40072502e80459f5c31"/>
+  <macro name="ann_COMPET_run" file="ann_COMPET_run.bin" md5="e6318b2922903fca7ac92905539ffbd2"/>
+  <macro name="ann_COMPET_visualize2d" file="ann_COMPET_visualize2d.bin" md5="6ab18ad26a8bed166e8331a9839dc3b6"/>
+  <macro name="ann_COMPET_visualize3d" file="ann_COMPET_visualize3d.bin" md5="a76fbe08af7b00b29e6afc8e65f54500"/>
+  <macro name="ann_FFBP_gd" file="ann_FFBP_gd.bin" md5="680e397c893e08f51e939446bea44eb6"/>
+  <macro name="ann_FFBP_gda" file="ann_FFBP_gda.bin" md5="5fb6782cf07e75483c29fd82993984e5"/>
+  <macro name="ann_FFBP_gdm" file="ann_FFBP_gdm.bin" md5="60e816ef2821075b8d7722748f0261ee"/>
+  <macro name="ann_FFBP_gdx" file="ann_FFBP_gdx.bin" md5="1c7d63975e5e5de48647d260bb149b83"/>
+  <macro name="ann_FFBP_lm" file="ann_FFBP_lm.bin" md5="a580c9aa78b74c70166e2c7a3449e2e7"/>
+  <macro name="ann_FFBP_run" file="ann_FFBP_run.bin" md5="c567466b19b6826e3e4ba26ea6d17244"/>
+  <macro name="ann_FFBP_sim" file="ann_FFBP_sim.bin" md5="dcd7a33a14174c285a19ec26351b8dc1"/>
+  <macro name="ann_LVQ1" file="ann_LVQ1.bin" md5="0664f8af8b6301d6179c836e7402c57a"/>
+  <macro name="ann_LVQ_run" file="ann_LVQ_run.bin" md5="b4d01975bc08078f346b68b01b0615af"/>
+  <macro name="ann_PERCEPTRON" file="ann_PERCEPTRON.bin" md5="aa44cc65d956eeb7a2a48d2c115ec7e0"/>
+  <macro name="ann_PERCEPTRON_run" file="ann_PERCEPTRON_run.bin" md5="dc125968d624503a204f14205670d249"/>
+  <macro name="ann_PERCEPTRON_visualize" file="ann_PERCEPTRON_visualize.bin" md5="eea078674e6279e994437140ad3ebc7e"/>
+  <macro name="ann_SOM" file="ann_SOM.bin" md5="0751c9f82990f60deeb0e8e8fe40e529"/>
+  <macro name="ann_SOM_online" file="ann_SOM_online.bin" md5="9438f1521876eaa58dd463494c21f735"/>
+  <macro name="ann_SOM_run" file="ann_SOM_run.bin" md5="9c7a215d9529410d7f560121a3df56f5"/>
+  <macro name="ann_SOM_visualize2d" file="ann_SOM_visualize2d.bin" md5="8cdbbec2e0a1ecdc3434d944ee6c84be"/>
+  <macro name="ann_SOM_visualize3d" file="ann_SOM_visualize3d.bin" md5="8d05779af903eb2766b614ea8904b21f"/>
+  <macro name="ann_getToolboxPath" file="ann_getToolboxPath.bin" md5="1b20c0db4f7960c76bab6d9d337193eb"/>
+</scilablib>

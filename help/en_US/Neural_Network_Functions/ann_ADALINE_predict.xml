@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from ann_ADALINE_predict.sci using help_from_sci().
+ *
+ -->
+
+<refentry version="5.0-subset Scilab" xml:id="ann_ADALINE_predict" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <info>
+    <pubdate>$LastChangedDate: 19-Mar-2012 $</pubdate>
+  </info>
+
+  <refnamediv>
+    <refname>ann_ADALINE_predict</refname><refpurpose>ANN ADALINE training function (incremental training with tapped delay)</refpurpose>
+  </refnamediv>
+
+
+
+<refsynopsisdiv>
+   <title>Calling Sequence</title>
+   <synopsis>
+   [w,b] = ann_ADALINE_predict(P,T,alpha)
+   [w,b] = ann_ADALINE_predict(P,T,alpha,itermax,D,initfunc)
+   
+   </synopsis>
+</refsynopsisdiv>
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+   <varlistentry><term>X :</term>
+      <listitem><para> Training input</para></listitem></varlistentry>
+   <varlistentry><term>T :</term>
+      <listitem><para> Training target</para></listitem></varlistentry>
+   <varlistentry><term>alpha :</term>
+      <listitem><para> Learning Rate</para></listitem></varlistentry>
+   <varlistentry><term>itermaxs :</term>
+      <listitem><para> Maximum Training Iteration</para></listitem></varlistentry>
+   <varlistentry><term>D :</term>
+      <listitem><para> number of delays</para></listitem></varlistentry>
+   <varlistentry><term>initfunc :</term>
+      <listitem><para> Weight and Bias Initialize functions, either 'rand', 'zeros', or 'ones'</para></listitem></varlistentry>
+   <varlistentry><term>w :</term>
+      <listitem><para> weights for the network</para></listitem></varlistentry>
+   <varlistentry><term>b :</term>
+      <listitem><para> bias for the network</para></listitem></varlistentry>
+   <varlistentry><term>y :</term>
+      <listitem><para> Predicted output</para></listitem></varlistentry>
+   <varlistentry><term>ee :</term>
+      <listitem><para> Error between T and y</para></listitem></varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+Adaptive Linear Neuron with incremental (going throught data one by one) training algorithm and tapped delay
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+x = 0:0.02:20;
+P = sin(x);
+T = 2.*sin(x - 0.2);
+plot(x,P,x,T);
+
+// Create and train a network to preduct T from P
+Delay = 3;
+[w,b,y,ee] = ann_ADALINE_predict(P,T,0.2,1,Delay);
+figure(); plot(T); plot(y,'r');
+
+   ]]></programlisting>
+</refsection>
+
+<refsection>
+   <title>See also</title>
+   <simplelist type="inline">
+   <member><link linkend="ann_ADALINE">ann_ADALINE</link></member>
+   <member><link linkend="ann_ADALINE_online">ann_ADALINE_online</link></member>
+   <member><link linkend="ann_ADALINE_run">ann_ADALINE_run</link></member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Tan C.L.</member>
+   </simplelist>
+</refsection>
+</refentry>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scilablib name="NeuralNetlib">
+  <macro name="ann_logsig_backward" file="ann_logsig_backward.bin" md5="9ad7b475b344bffd694a15e12851e987"/>
+  <macro name="ann_purelin_backward" file="ann_purelin_backward.bin" md5="babb4a1a973e5cbd3e21ee9164e32f30"/>
+  <macro name="ann_relu_backward" file="ann_relu_backward.bin" md5="45508398559bc8e586566bc685b74840"/>
+  <macro name="ann_softmax_backward" file="ann_softmax_backward.bin" md5="b7c44b19ea85cd9821cf06bbf43e540f"/>
+  <macro name="ann_tansig_backward" file="ann_tansig_backward.bin" md5="eaa93ee41342f0c02d777c8d71aefcfd"/>
+  <macro name="compute_cost" file="compute_cost.bin" md5="acbc180097789bd1fabb3718fcf294c0"/>
+  <macro name="displayData" file="displayData.bin" md5="5bdad3c9e27922b3a026929c3eee9f86"/>
+  <macro name="initialize_parameters" file="initialize_parameters.bin" md5="31c95f343d73df13dd086f772a5dd86e"/>
+  <macro name="knn" file="knn.bin" md5="f934080d824d174b8ed595abcc77565a"/>
+  <macro name="linear_activation_backward" file="linear_activation_backward.bin" md5="3c9d0095ee723989e65bc06ca9584ac1"/>
+  <macro name="linear_activation_backward_last" file="linear_activation_backward_last.bin" md5="ed16a4771e70b55603a3d4c4f148c07e"/>
+  <macro name="linear_activation_forward" file="linear_activation_forward.bin" md5="4497af55a23bd9a8becc966f65a67453"/>
+  <macro name="linear_backward" file="linear_backward.bin" md5="56aadc4492fc6b1b08e4ace450110dda"/>
+  <macro name="linear_forward" file="linear_forward.bin" md5="e5336c834257ae7bfb1b4ade95ff6061"/>
+  <macro name="model_backward" file="model_backward.bin" md5="5a0b99598545a466c1aaec3999621fe8"/>
+  <macro name="model_forward" file="model_forward.bin" md5="5870f0c2c564e6dc79e5e7ad4e150076"/>
+  <macro name="nn_eval_performance" file="nn_eval_performance.bin" md5="8ed9a905902846bf93f16b245e339c06"/>
+  <macro name="nn_onehot" file="nn_onehot.bin" md5="8bb202f23546108b5449622cc9514f31"/>
+  <macro name="nn_split_data" file="nn_split_data.bin" md5="17323f5c889537b2f30b4c2e3d45022d"/>
+  <macro name="nn_train" file="nn_train.bin" md5="fb38f3fe3bc0b66f2ce543fc630fb800"/>
+  <macro name="update_parameters" file="update_parameters.bin" md5="4657c10c54ef88abfd58b94eea6d7c27"/>
+</scilablib>

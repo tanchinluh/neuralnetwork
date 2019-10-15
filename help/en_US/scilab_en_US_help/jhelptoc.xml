@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE toc PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp TOC Version 1.0//EN" "http://java.sun.com/products/javahelp/toc_1_0.dtd">
+<toc version="1.0">
+<tocitem target="index" text="NeuralNet">
+<tocitem target="section_629fe2362772f7d67f32a33d3140e5df" text="Computation functions">
+<tocitem target="ann_calcjac" text="ann_calcjac"/>
+<tocitem target="ann_compet_activ" text="ann_compet_activ"/>
+<tocitem target="ann_compet_init" text="ann_compet_init"/>
+<tocitem target="ann_d_hardlim_activ" text="ann_d_hardlim_activ"/>
+<tocitem target="ann_d_logsig_activ" text="ann_d_logsig_activ"/>
+<tocitem target="ann_d_purelin_activ" text="ann_d_purelin_activ"/>
+<tocitem target="ann_d_tansig_activ" text="ann_d_tansig_activ"/>
+<tocitem target="ann_dist" text="ann_dist"/>
+<tocitem target="ann_ffbp_init" text="ann_ffbp_init"/>
+<tocitem target="ann_gencluster" text="ann_gencluster"/>
+<tocitem target="ann_hardlim_activ" text="ann_hardlim_activ"/>
+<tocitem target="ann_logsig_activ" text="ann_logsig_activ"/>
+<tocitem target="ann_negdist" text="ann_negdist"/>
+<tocitem target="ann_purelin_activ" text="ann_purelin_activ"/>
+<tocitem target="ann_som_boxdist" text="ann_som_boxdist"/>
+<tocitem target="ann_som_eudist" text="ann_som_eudist"/>
+<tocitem target="ann_som_gridtop" text="ann_som_gridtop"/>
+<tocitem target="ann_som_hextop" text="ann_som_hextop"/>
+<tocitem target="ann_som_linkdist" text="ann_som_linkdist"/>
+<tocitem target="ann_som_mandist" text="ann_som_mandist"/>
+<tocitem target="ann_som_randtop" text="ann_som_randtop"/>
+<tocitem target="ann_tansig_activ" text="ann_tansig_activ"/>
+<tocitem target="ann_training_process" text="ann_training_process"/>
+</tocitem>
+<tocitem target="section_67e9f607317ce381f39de0475e185493" text="Neural network functions">
+<tocitem target="ann_ADALINE" text="ann_ADALINE"/>
+<tocitem target="ann_ADALINE_online" text="ann_ADALINE_online"/>
+<tocitem target="ann_ADALINE_predict" text="ann_ADALINE_predict"/>
+<tocitem target="ann_ADALINE_run" text="ann_ADALINE_run"/>
+<tocitem target="ann_COMPET" text="ann_COMPET"/>
+<tocitem target="ann_COMPET_run" text="ann_COMPET_run"/>
+<tocitem target="ann_COMPET_visualize2d" text="ann_COMPET_visualize2d"/>
+<tocitem target="ann_COMPET_visualize3d" text="ann_COMPET_visualize3d"/>
+<tocitem target="ann_FFBP_gd" text="ann_FFBP_gd"/>
+<tocitem target="ann_FFBP_gda" text="ann_FFBP_gda"/>
+<tocitem target="ann_FFBP_gdm" text="ann_FFBP_gdm"/>
+<tocitem target="ann_FFBP_gdx" text="ann_FFBP_gdx"/>
+<tocitem target="ann_FFBP_lm" text="ann_FFBP_lm"/>
+<tocitem target="ann_FFBP_run" text="ann_FFBP_run"/>
+<tocitem target="ann_FFBP_sim" text="ann_FFBP_sim"/>
+<tocitem target="ann_LVQ1" text="ann_LVQ1"/>
+<tocitem target="ann_LVQ_run" text="ann_LVQ_run"/>
+<tocitem target="ann_PERCEPTRON" text="ann_PERCEPTRON"/>
+<tocitem target="ann_PERCEPTRON_run" text="ann_PERCEPTRON_run"/>
+<tocitem target="ann_PERCEPTRON_visualize" text="ann_PERCEPTRON_visualize"/>
+<tocitem target="ann_SOM" text="ann_SOM"/>
+<tocitem target="ann_SOM_online" text="ann_SOM_online"/>
+<tocitem target="ann_SOM_run" text="ann_SOM_run"/>
+<tocitem target="ann_SOM_visualize2d" text="ann_SOM_visualize2d"/>
+<tocitem target="ann_SOM_visualize3d" text="ann_SOM_visualize3d"/>
+<tocitem target="ann_getToolboxPath" text="ann_getToolboxPath"/>
+</tocitem>
+<tocitem target="section_2a786a68237e7127c4090927ab048405" text="Utilities_Functions">
+<tocitem target="ann_imgcrop" text="ann_imgcrop"/>
+<tocitem target="ann_imgfeatures" text="ann_imgfeatures"/>
+<tocitem target="ann_imgpreprocess" text="ann_imgpreprocess"/>
+</tocitem>
+<tocitem target="section_e39a419e5abb1e89d4b3d3a4ffe04484" text="Visualization functions">
+<tocitem target="ann_som_plot2d" text="ann_som_plot2d"/>
+<tocitem target="ann_som_plot3d" text="ann_som_plot3d"/>
+<tocitem target="plot3dot" text="plot3dot"/>
+<tocitem target="plot_2group" text="plot_2group"/>
+<tocitem target="plot_weight" text="plot_weight"/>
+<tocitem target="plotchar" text="plotchar"/>
+<tocitem target="plotchar53" text="plotchar53"/>
+</tocitem>
+</tocitem>
+</toc>

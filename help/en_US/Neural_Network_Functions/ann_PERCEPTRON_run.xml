@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from ann_PERCEPTRON_run.sci using help_from_sci().
+ *
+ -->
+
+<refentry version="5.0-subset Scilab" xml:id="ann_PERCEPTRON_run" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <info>
+    <pubdate>$LastChangedDate: 19-Mar-2012 $</pubdate>
+  </info>
+
+  <refnamediv>
+    <refname>ann_PERCEPTRON_run</refname><refpurpose>ANN Perceptron simulate function.</refpurpose>
+  </refnamediv>
+
+
+
+<refsynopsisdiv>
+   <title>Calling Sequence</title>
+   <synopsis>
+   y = ann_PERCEPTRON_run(P,w,b)
+   
+   </synopsis>
+</refsynopsisdiv>
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+   <varlistentry><term>P :</term>
+      <listitem><para> Testing input</para></listitem></varlistentry>
+   <varlistentry><term>w :</term>
+      <listitem><para> weights for the network</para></listitem></varlistentry>
+   <varlistentry><term>b :</term>
+      <listitem><para> bias for the network</para></listitem></varlistentry>
+   <varlistentry><term>y :</term>
+      <listitem><para> simulated output</para></listitem></varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+This funtion is a simple perceptron simulation function. Use after w and b created, either manually or by function ann_PERCEPTRON
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+P = [0 0 1 1 ; 0 1 0 1];
+T = [0 0 0 1];
+[w,b] = ann_PERCEPTRON(P,T);
+y = ann_PERCEPTRON_run(P,w,b)
+
+   ]]></programlisting>
+</refsection>
+
+<refsection>
+   <title>See also</title>
+   <simplelist type="inline">
+   <member><link linkend="ann_PERCEPTRON">ann_PERCEPTRON</link></member>
+   <member><link linkend="ann_PERCEPTRON_visualize">ann_PERCEPTRON_visualize</link></member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Tan C.L.</member>
+   </simplelist>
+</refsection>
+</refentry>

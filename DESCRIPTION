@@ -1,0 +1,29 @@
+Toolbox: neuralnetwork
+
+Title: Scilab Neural Network Module
+
+Summary: This is a Scilab Neural Network Module which covers supervised and unsupervised training algorithms
+
+Version: 2.0
+
+Date: 2011-11-02
+
+Author: Tan Chin Luh <chinluh@tritytech.com>
+
+Maintainer: Tan Chin Luh <chinluh@tritytech.com>
+
+Category: Neural Network
+
+Entity: none
+
+WebSite: http://www.tritytech.com
+
+URL: http://www.tritytech.com
+
+License: GPL (>=2)
+
+ScilabVersion: >= 5.5
+
+Depends: 
+
+Description: 

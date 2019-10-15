@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from ann_ADALINE_online.sci using help_from_sci().
+ *
+ -->
+
+<refentry version="5.0-subset Scilab" xml:id="ann_ADALINE_online" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <info>
+    <pubdate>$LastChangedDate: 19-Mar-2012 $</pubdate>
+  </info>
+
+  <refnamediv>
+    <refname>ann_ADALINE_online</refname><refpurpose>ANN ADALINE training function (incremental training)</refpurpose>
+  </refnamediv>
+
+
+
+<refsynopsisdiv>
+   <title>Calling Sequence</title>
+   <synopsis>
+   [w,b] = ann_ADALINE_online(P,T)
+   [w,b] = ann_ADALINE_online(P,T,alpha,itermax,initfunc)
+   
+   </synopsis>
+</refsynopsisdiv>
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+   <varlistentry><term>P :</term>
+      <listitem><para> Training input</para></listitem></varlistentry>
+   <varlistentry><term>T :</term>
+      <listitem><para> Training target</para></listitem></varlistentry>
+   <varlistentry><term>alpha :</term>
+      <listitem><para> Learning Rate</para></listitem></varlistentry>
+   <varlistentry><term>itermaxs :</term>
+      <listitem><para> Maximum Training Iteration</para></listitem></varlistentry>
+   <varlistentry><term>initfunc :</term>
+      <listitem><para> Weight and Bias Initialize functions, either 'rand', 'zeros', or 'ones'</para></listitem></varlistentry>
+   <varlistentry><term>w :</term>
+      <listitem><para> weights for the network</para></listitem></varlistentry>
+   <varlistentry><term>b :</term>
+      <listitem><para> bias for the network</para></listitem></varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+Adaptive Linear Neuron with incremental (going throught data one by one) training algorithm.
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+P = [0 0 1 1 ; 0 1 0 1];
+T = [0 0 0 1];
+[w,b] = ann_ADALINE_online(P,T);
+y = ann_ADALINE_run(P,w,b)
+
+   ]]></programlisting>
+</refsection>
+
+<refsection>
+   <title>See also</title>
+   <simplelist type="inline">
+   <member><link linkend="ann_ADALINE">ann_ADALINE</link></member>
+   <member><link linkend="ann_ADALINE_predict">ann_ADALINE_predict</link></member>
+   <member><link linkend="ann_ADALINE_run">ann_ADALINE_run</link></member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Tan C.L.</member>
+   </simplelist>
+</refsection>
+</refentry>

@@ -1,0 +1,51 @@
+
+function [NeuralNet_computelib, NeuralNet_networklib, NeuralNet_visuallib, NeuralNet_utillib,NeuralNet_new] = startModule()
+
+mprintf("START Scilab Neural Network Module 2.0\n");
+
+if isdef("NeuralNet_computelib") then
+	warning("Neural Network library is already loaded");
+	return;
+end
+
+etc_tlbx  = get_absolute_file_path("NeuralNet.start");
+etc_tlbx  = getshortpathname(etc_tlbx);
+root_tlbx = strncpy( etc_tlbx, length(etc_tlbx)-length("\etc\") );
+
+//Load  functions library
+// =============================================================================
+mprintf("\tLoad Neural Network Libraries\n");
+pathmacros  = pathconvert( root_tlbx ) + "macros" + filesep();
+NeuralNet_computelib = lib(pathmacros + "computation");
+NeuralNet_networklib = lib(pathmacros + "network");
+NeuralNet_visuallib = lib(pathmacros + "visualisation");
+NeuralNet_utillib = lib(pathmacros + "utilities");
+NeuralNet_new = lib(pathmacros + "new");
+
+// Load demos
+// =============================================================================
+  if or(getscilabmode() == ["NW";"STD"]) then
+    mprintf("\tLoad demos\n");
+    pathdemos = pathconvert(root_tlbx+"/demos/NeuralNet.dem.gateway.sce", %F, %T);
+    add_demo("Neuronal Network", pathdemos);
+  end
+
+
+// Load and add help chapter
+// =============================================================================
+if or(getscilabmode() == ["NW";"STD"]) then
+	mprintf("\tLoad Neural Network Model''s help documents\n");
+	path_addchapter = pathconvert(root_tlbx+"/jar");
+	if ( isdir(path_addchapter) <> [] ) then
+		add_help_chapter("NeuralNet", path_addchapter, %F);
+	end
+end
+
+// Help message
+// =============================================================================
+mprintf("\tType ""help"" to view documentation and examples for Neural Network\n");
+
+endfunction
+
+[NeuralNet_computelib, NeuralNet_networklib, NeuralNet_visuallib,NeuralNet_utillib,NeuralNet_new] = startModule();
+clear startModule;

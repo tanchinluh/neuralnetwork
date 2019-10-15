@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from ann_COMPET_visualize3d.sci using help_from_sci().
+ *
+ -->
+
+<refentry version="5.0-subset Scilab" xml:id="ann_COMPET_visualize3d" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <info>
+    <pubdate>$LastChangedDate: 19-Mar-2012 $</pubdate>
+  </info>
+
+  <refnamediv>
+    <refname>ann_COMPET_visualize3d</refname><refpurpose>ANN Competitive Network with 3d animation</refpurpose>
+  </refnamediv>
+
+
+
+<refsynopsisdiv>
+   <title>Calling Sequence</title>
+   <synopsis>
+   [W,b] =  ann_COMPET_visualize3d(P,N)
+   [W,b] =  ann_COMPET_visualize3d(P,N,lr,lr_c,itermax)
+   
+   </synopsis>
+</refsynopsisdiv>
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+   <varlistentry><term>P :</term>
+      <listitem><para> Training input</para></listitem></varlistentry>
+   <varlistentry><term>N :</term>
+      <listitem><para> Number of neurons in competition layer (Number of classes)</para></listitem></varlistentry>
+   <varlistentry><term>lr :</term>
+      <listitem><para> Learning rate</para></listitem></varlistentry>
+   <varlistentry><term>lr_c :</term>
+      <listitem><para> Learning Rate for bias (Conscience learning rate)</para></listitem></varlistentry>
+   <varlistentry><term>itermax :</term>
+      <listitem><para> Maximum epoch for training</para></listitem></varlistentry>
+   <varlistentry><term>W :</term>
+      <listitem><para> Output Weight</para></listitem></varlistentry>
+   <varlistentry><term>b :</term>
+      <listitem><para> Output bias</para></listitem></varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+Competitive network training algorithm with 3d animation
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+x = rand(3,10);
+x(:,1:5) = x(:,1:5) + 1;
+[W,b] =  ann_COMPET_visualize3d(x,2);
+
+   ]]></programlisting>
+</refsection>
+
+<refsection>
+   <title>See also</title>
+   <simplelist type="inline">
+   <member><link linkend="ann_COMPET">ann_COMPET</link></member>
+   <member><link linkend="ann_COMPET_run">ann_COMPET_run</link></member>
+   <member><link linkend="ann_COMPET_visualize2d">ann_COMPET_visualize2d</link></member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Tan C.L.</member>
+   </simplelist>
+</refsection>
+</refentry>

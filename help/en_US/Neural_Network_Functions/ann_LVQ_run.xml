@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from ann_LVQ_run.sci using help_from_sci().
+ *
+ -->
+
+<refentry version="5.0-subset Scilab" xml:id="ann_LVQ_run" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <info>
+    <pubdate>$LastChangedDate: 19-Mar-2012 $</pubdate>
+  </info>
+
+  <refnamediv>
+    <refname>ann_LVQ_run</refname><refpurpose>ANN LVQ Network Simulation function</refpurpose>
+  </refnamediv>
+
+
+
+<refsynopsisdiv>
+   <title>Calling Sequence</title>
+   <synopsis>
+   [y,classes] = ann_LVQ_run(W,P)
+   
+   </synopsis>
+</refsynopsisdiv>
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+   <varlistentry><term>W :</term>
+      <listitem><para> weights for the network</para></listitem></varlistentry>
+   <varlistentry><term>P :</term>
+      <listitem><para> Testing input</para></listitem></varlistentry>
+   <varlistentry><term>y :</term>
+      <listitem><para> Winning Neuron (Classes for the supervised portion of LVW Network)</para></listitem></varlistentry>
+   <varlistentry><term>classes :</term>
+      <listitem><para> Classes for the input</para></listitem></varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+LVQ network simulation function
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+x = rand(2,10);
+x(:,1:5) = x(:,1:5) + 1;
+T = [1 1 1 1 1 0 0 0 0 0;0 0 0 0 0 1 1 1 1 1]
+[W,b] =  ann_LVQ1(x,T,4);
+[y,classes] = ann_LVQ_run(W,x)
+
+   ]]></programlisting>
+</refsection>
+
+<refsection>
+   <title>See also</title>
+   <simplelist type="inline">
+   <member><link linkend="ann_LVQ1">ann_LVQ1</link></member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Tan C.L.</member>
+   </simplelist>
+</refsection>
+</refentry>

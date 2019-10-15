@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book [
+<!--Begin Entities-->
+<!ENTITY ac08149f514108bed28e847ae3918490c SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Computation_Functions/ann_calcjac.xml">
+<!ENTITY a2203bc7eeb808fb1ae1fc7dc34670e9d SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Computation_Functions/ann_compet_activ.xml">
+<!ENTITY aa8327fc78304dabb5f5100562217ac78 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Computation_Functions/ann_compet_init.xml">
+<!ENTITY a3515c24851db1ae161f6f81a24f1161a SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Computation_Functions/ann_d_hardlim_activ.xml">
+<!ENTITY a165224fdd92534dd711ab606ab485a9d SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Computation_Functions/ann_d_logsig_activ.xml">
+<!ENTITY a170a4477f3a6e530cf7ca130138d04ae SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Computation_Functions/ann_d_purelin_activ.xml">
+<!ENTITY a64bc0e0c825bd43e3da2ce41baea8cb1 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Computation_Functions/ann_d_tansig_activ.xml">
+<!ENTITY a434c93890e20b8e988f020e378e9ea23 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Computation_Functions/ann_dist.xml">
+<!ENTITY a0bca356f1dab3f64b8e3bd9603c2b37a SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Computation_Functions/ann_ffbp_init.xml">
+<!ENTITY aaf49433f03c70acb9c52f5cf75eb345e SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Computation_Functions/ann_gencluster.xml">
+<!ENTITY adc243dba99364e9afd5a966ac1364ef8 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Computation_Functions/ann_hardlim_activ.xml">
+<!ENTITY a3ac59115c5f94864f4746503169e077f SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Computation_Functions/ann_logsig_activ.xml">
+<!ENTITY a1a18416657c7b8b71023d701c1213362 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Computation_Functions/ann_negdist.xml">
+<!ENTITY a18c3d38c7c83891871a5378d152782a1 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Computation_Functions/ann_purelin_activ.xml">
+<!ENTITY a86bc28696078f2aa2b7d22baa9930677 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Computation_Functions/ann_som_boxdist.xml">
+<!ENTITY ae2f8a4139090755f98e32f39fd4b513c SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Computation_Functions/ann_som_eudist.xml">
+<!ENTITY a1d3a4cadec65e208abc8c34638c23943 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Computation_Functions/ann_som_gridtop.xml">
+<!ENTITY a4029b55f90b5988b812f140d27d19fd6 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Computation_Functions/ann_som_hextop.xml">
+<!ENTITY a0d1e227fbc6859c3dec468e48e00b7ec SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Computation_Functions/ann_som_linkdist.xml">
+<!ENTITY ab021aa4e7621231bd2583d30b2af491e SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Computation_Functions/ann_som_mandist.xml">
+<!ENTITY ab28f6386e2964101dee7b2504dcf5112 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Computation_Functions/ann_som_randtop.xml">
+<!ENTITY aa654535a4f69d6984dd6db8c21381f51 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Computation_Functions/ann_tansig_activ.xml">
+<!ENTITY acc0ee2b9e7c8d364b3ddacb39d7801d8 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Computation_Functions/ann_training_process.xml">
+<!ENTITY a9ac72714a2ae153a488893f62b34796d SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_ADALINE.xml">
+<!ENTITY a511ee3b838b92e3efcb670057ce93eb0 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_ADALINE_online.xml">
+<!ENTITY a5f49c74e7e47f960a628548ec92c1076 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_ADALINE_predict.xml">
+<!ENTITY a931d575367623c14fb14fff115234870 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_ADALINE_run.xml">
+<!ENTITY a53d41482d887008c26d06b50ae65ba85 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_COMPET.xml">
+<!ENTITY adf49290f51aa90aa9b22f38045a63ab4 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_COMPET_run.xml">
+<!ENTITY a0fb88cae9cb3ffd7aec0f53c110fd579 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_COMPET_visualize2d.xml">
+<!ENTITY acc5b1c8ecb14ff4d2d4beab034025071 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_COMPET_visualize3d.xml">
+<!ENTITY a64694a6abdbb47e5e5be8805d01dcf6a SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_FFBP_gd.xml">
+<!ENTITY ad0a69763d6e8755115d3e04911bbe3d8 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_FFBP_gda.xml">
+<!ENTITY adc10045be7c9c7e09af4af44bc61427f SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_FFBP_gdm.xml">
+<!ENTITY a1739ebd5e4a2e765059bd4b7042a80a8 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_FFBP_gdx.xml">
+<!ENTITY aa9a9d3dbf354b8f8b634ff7f0cd24651 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_FFBP_lm.xml">
+<!ENTITY ace823322abce594020cc05abdcf4dc88 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_FFBP_run.xml">
+<!ENTITY a722e84907fb9cb9599af23a1872470dc SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_FFBP_sim.xml">
+<!ENTITY a521e9d7ffc18b2a28cf937a2271dbf13 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_LVQ1.xml">
+<!ENTITY ad95090365780da5d36b6e62fe77b2425 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_LVQ_run.xml">
+<!ENTITY ae18b709fb6c9a288d192a3815f159e20 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_PERCEPTRON.xml">
+<!ENTITY a33ed854bb24ff8c8da652d9a26b1a0dc SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_PERCEPTRON_run.xml">
+<!ENTITY a7c5f0d30393ecfdb6fec9ca06c6fd093 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_PERCEPTRON_visualize.xml">
+<!ENTITY a009b41db3e87e0716688cc9e9620faac SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_SOM.xml">
+<!ENTITY a1c6763372c89adcf4840026b945304ae SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_SOM_online.xml">
+<!ENTITY af6f10ef313bd95e300c23616f1c6f40e SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_SOM_run.xml">
+<!ENTITY a8c4a2bf8b4a49d4c98450f2b77af09fa SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_SOM_visualize2d.xml">
+<!ENTITY ab9494798885d67834d4fcfb634d961b8 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_SOM_visualize3d.xml">
+<!ENTITY a806a25f784d76679a163bbbe77846630 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Neural_Network_Functions/ann_getToolboxPath.xml">
+<!ENTITY a4f2c3c2c6a91c0d544b3879ba979e3f5 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Utilities_Functions/ann_imgcrop.xml">
+<!ENTITY a2a5f93a9c80daee7de60ddaf17973040 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Utilities_Functions/ann_imgfeatures.xml">
+<!ENTITY a597bb28b9edb85bf96243a11d31c227c SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Utilities_Functions/ann_imgpreprocess.xml">
+<!ENTITY aa2bec6afce782fd68dd633b2a300d630 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Visualisation_Functions/ann_som_plot2d.xml">
+<!ENTITY add5e78fff099cc437a49c6cdb67626a4 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Visualisation_Functions/ann_som_plot3d.xml">
+<!ENTITY a0e15f40e762ec1f61e24d9ebc4e321a4 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Visualisation_Functions/plot3dot.xml">
+<!ENTITY a8e722eec91ce3b9e9c0c87d294a45abe SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Visualisation_Functions/plot_2group.xml">
+<!ENTITY ac824dbcb7ceae4fd0af8954fd9ef491e SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Visualisation_Functions/plot_weight.xml">
+<!ENTITY a82897d4c043b1a55bb5aa97eb769f3b6 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Visualisation_Functions/plotchar.xml">
+<!ENTITY a2c802d431dc664a59feb0c3b856f38b1 SYSTEM "file:///C:/Program Files/scilab-6.0.2/contrib/neuralnetwork/2.0/help/en_US/Visualisation_Functions/plotchar53.xml">
+<!--End Entities-->
+]>
+<book version="5.0-subset Scilab" xml:lang="en_US"
+      xmlns="http://docbook.org/ns/docbook"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      xmlns:mml="http://www.w3.org/1998/Math/MathML"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:db="http://docbook.org/ns/docbook">
+  <info xml:id='neuralnet_manual'>
+    <title>NeuralNet</title>
+  </info>
+
+<part xml:id='section_629fe2362772f7d67f32a33d3140e5df'>
+<title>Computation functions</title>
+&ac08149f514108bed28e847ae3918490c;
+&a2203bc7eeb808fb1ae1fc7dc34670e9d;
+&aa8327fc78304dabb5f5100562217ac78;
+&a3515c24851db1ae161f6f81a24f1161a;
+&a165224fdd92534dd711ab606ab485a9d;
+&a170a4477f3a6e530cf7ca130138d04ae;
+&a64bc0e0c825bd43e3da2ce41baea8cb1;
+&a434c93890e20b8e988f020e378e9ea23;
+&a0bca356f1dab3f64b8e3bd9603c2b37a;
+&aaf49433f03c70acb9c52f5cf75eb345e;
+&adc243dba99364e9afd5a966ac1364ef8;
+&a3ac59115c5f94864f4746503169e077f;
+&a1a18416657c7b8b71023d701c1213362;
+&a18c3d38c7c83891871a5378d152782a1;
+&a86bc28696078f2aa2b7d22baa9930677;
+&ae2f8a4139090755f98e32f39fd4b513c;
+&a1d3a4cadec65e208abc8c34638c23943;
+&a4029b55f90b5988b812f140d27d19fd6;
+&a0d1e227fbc6859c3dec468e48e00b7ec;
+&ab021aa4e7621231bd2583d30b2af491e;
+&ab28f6386e2964101dee7b2504dcf5112;
+&aa654535a4f69d6984dd6db8c21381f51;
+&acc0ee2b9e7c8d364b3ddacb39d7801d8;
+</part>
+<part xml:id='section_67e9f607317ce381f39de0475e185493'>
+<title>Neural network functions</title>
+&a9ac72714a2ae153a488893f62b34796d;
+&a511ee3b838b92e3efcb670057ce93eb0;
+&a5f49c74e7e47f960a628548ec92c1076;
+&a931d575367623c14fb14fff115234870;
+&a53d41482d887008c26d06b50ae65ba85;
+&adf49290f51aa90aa9b22f38045a63ab4;
+&a0fb88cae9cb3ffd7aec0f53c110fd579;
+&acc5b1c8ecb14ff4d2d4beab034025071;
+&a64694a6abdbb47e5e5be8805d01dcf6a;
+&ad0a69763d6e8755115d3e04911bbe3d8;
+&adc10045be7c9c7e09af4af44bc61427f;
+&a1739ebd5e4a2e765059bd4b7042a80a8;
+&aa9a9d3dbf354b8f8b634ff7f0cd24651;
+&ace823322abce594020cc05abdcf4dc88;
+&a722e84907fb9cb9599af23a1872470dc;
+&a521e9d7ffc18b2a28cf937a2271dbf13;
+&ad95090365780da5d36b6e62fe77b2425;
+&ae18b709fb6c9a288d192a3815f159e20;
+&a33ed854bb24ff8c8da652d9a26b1a0dc;
+&a7c5f0d30393ecfdb6fec9ca06c6fd093;
+&a009b41db3e87e0716688cc9e9620faac;
+&a1c6763372c89adcf4840026b945304ae;
+&af6f10ef313bd95e300c23616f1c6f40e;
+&a8c4a2bf8b4a49d4c98450f2b77af09fa;
+&ab9494798885d67834d4fcfb634d961b8;
+&a806a25f784d76679a163bbbe77846630;
+</part>
+<part xml:id='section_2a786a68237e7127c4090927ab048405'>
+<title>Utilities_Functions</title>
+&a4f2c3c2c6a91c0d544b3879ba979e3f5;
+&a2a5f93a9c80daee7de60ddaf17973040;
+&a597bb28b9edb85bf96243a11d31c227c;
+</part>
+<part xml:id='section_e39a419e5abb1e89d4b3d3a4ffe04484'>
+<title>Visualization functions</title>
+&aa2bec6afce782fd68dd633b2a300d630;
+&add5e78fff099cc437a49c6cdb67626a4;
+&a0e15f40e762ec1f61e24d9ebc4e321a4;
+&a8e722eec91ce3b9e9c0c87d294a45abe;
+&ac824dbcb7ceae4fd0af8954fd9ef491e;
+&a82897d4c043b1a55bb5aa97eb769f3b6;
+&a2c802d431dc664a59feb0c3b856f38b1;
+</part>
+</book>

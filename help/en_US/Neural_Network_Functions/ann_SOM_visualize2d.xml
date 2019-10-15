@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from ann_SOM_visualize2d.sci using help_from_sci().
+ *
+ -->
+
+<refentry version="5.0-subset Scilab" xml:id="ann_SOM_visualize2d" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <info>
+    <pubdate>$LastChangedDate: 19-Mar-2012 $</pubdate>
+  </info>
+
+  <refnamediv>
+    <refname>ann_SOM_visualize2d</refname><refpurpose>ANN Self-Orginizing Map with 2d visualization</refpurpose>
+  </refnamediv>
+
+
+
+<refsynopsisdiv>
+   <title>Calling Sequence</title>
+   <synopsis>
+   W = ann_SOM(P)
+   W = ann_SOM(P,N,itermax,steps,NS,topfcn,distfcn)
+   
+   </synopsis>
+</refsynopsisdiv>
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+   <varlistentry><term>P :</term>
+      <listitem><para> Training input</para></listitem></varlistentry>
+   <varlistentry><term>N :</term>
+      <listitem><para> Structure of Feature Map</para></listitem></varlistentry>
+   <varlistentry><term>itermax :</term>
+      <listitem><para> Maximum epoch for training</para></listitem></varlistentry>
+   <varlistentry><term>steps :</term>
+      <listitem><para> steps of the NS decrease</para></listitem></varlistentry>
+   <varlistentry><term>NS :</term>
+      <listitem><para> Initial neighbourhood size</para></listitem></varlistentry>
+   <varlistentry><term>topfcn :</term>
+      <listitem><para> Topology Function</para></listitem></varlistentry>
+   <varlistentry><term>distfcn :</term>
+      <listitem><para> Distance Function</para></listitem></varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+This function perform Self-Orginizing training algorithm with 2d visualization.
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+x = rand(2,10);
+x(:,1:5) = x(:,1:5) + 1;
+W =  ann_SOM_visualize2d(x,[2 2]);
+[y,classes] = ann_SOM_run(W,x)
+
+   ]]></programlisting>
+</refsection>
+
+<refsection>
+   <title>See also</title>
+   <simplelist type="inline">
+   <member><link linkend="ann_SOM">ann_SOM</link></member>
+   <member><link linkend="ann_SOM_online">ann_SOM_online</link></member>
+   <member><link linkend="ann_SOM_run">ann_SOM_run</link></member>
+   <member><link linkend="ann_SOM_visualize3d">ann_SOM_visualize3d</link></member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Tan C.L.</member>
+   </simplelist>
+</refsection>
+</refentry>

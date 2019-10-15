@@ -1,0 +1,55 @@
+Scilab Neural Network Module
+
+Version 1.0 (4 October 2011)
+	* 1st version released 
+	1. Perceptron
+	2. Adaline - application example: adaptive filter
+	3. Multilayer Feedforware Backpropagation Network - with 5 training algorithm implemented, including the levenberg-marquardt algorithm
+	4. Competitive Network
+	5. Self-Organizing Map
+	6. LVQ1 Network
+
+
+Version 1.1 (7 October 2011)
+	* Documents extracted from head comments with examples
+	1. First complete version with build in help files
+	2. Most functions come with simple example
+	3. Code reorganization
+	4. Fix bugs in ann_training_process
+
+Version 1.2 (trunk)
+	* Code reorganization
+        * Fix bugs in ann_training_process 
+	* Changes on plot_weight function for better visualisation (By Chin Luh)
+	1. Updates functions dependencies from IPD to AIVP
+	2. ann_som_gridtop example error fixed
+
+Changes on 19/3/2012
+	* Change ann_FFBP_lm error in help file
+	* Change ann_FFBP_run error in help file
+	* Add 3 utilities functions for use case purpose
+
+Changes on 24/4/2012
+	* Change ann_COMPET_visualize2d to have better axis viewing region
+
+Changes on 24/2/2014
+	* ann_som_* example error fixed
+	* utilities example error fixed
+	* plot_weight example error fixed
+
+Version 1.3 (trunk)
+Changes on 22/12/2014
+	* Progress bar updated for Scilab 5.5
+	1. update GUI for 5.5
+
+Version 2.0
+	1. First public release
+
+Version 2.1
+	1. Add knn and other new functions under "new" folder
+	2. Add new training method base on Andrew Ng's Class
+	3. Change training progress results to show on console instead of GUI
+
+
+
+-- Author <tanchinluh@gmail.com>  Tues, 4 October 2011

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from ann_ffbp_init.sci using help_from_sci().
+ *
+ -->
+
+<refentry version="5.0-subset Scilab" xml:id="ann_ffbp_init" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:scilab="http://www.scilab.org"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <refnamediv>
+    <refname>ann_ffbp_init</refname>
+    <refpurpose>ANN FeedForward Backpropagation Weight initialization function.</refpurpose>
+  </refnamediv>
+
+
+<refsynopsisdiv>
+   <title>Calling Sequence</title>
+   <synopsis>
+   W = ann_ffbp_init(N, r)
+   
+   </synopsis>
+</refsynopsisdiv>
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+   <varlistentry><term>N :</term>
+      <listitem><para> Number of Neurons in each layer, incluing Input and output layer</para></listitem></varlistentry>
+   <varlistentry><term>r :</term>
+      <listitem><para> Range for the initialization values</para></listitem></varlistentry>
+   <varlistentry><term>W :</term>
+      <listitem><para> Initial Weights</para></listitem></varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+Initialize weight for FFBP Network
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+N = [3 5 2];
+r = [-10 10];
+W = ann_ffbp_init(N, r)
+
+   ]]></programlisting>
+</refsection>
+
+<refsection>
+   <title>See also</title>
+   <simplelist type="inline">
+   <member><link linkend="ann_FFBP_gd">ann_FFBP_gd</link></member>
+   <member><link linkend="ann_FFBP_gda">ann_FFBP_gda</link></member>
+   <member><link linkend="ann_FFBP_gdm">ann_FFBP_gdm</link></member>
+   <member><link linkend="ann_FFBP_gdx">ann_FFBP_gdx</link></member>
+   <member><link linkend="ann_FFBP_lm">ann_FFBP_lm</link></member>
+   <member><link linkend="ann_FFBP_run">ann_FFBP_run</link></member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Tan C.L.</member>
+   </simplelist>
+</refsection>
+</refentry>
