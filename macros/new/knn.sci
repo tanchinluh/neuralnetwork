@@ -9,8 +9,8 @@ function dist = getDistance(x1, x2)
         err = x1 - repmat(x2,1,size(x1,2));
 //    end
 
+    //dist = sqrt(sum(err.^2,1));
     dist = sqrt(sum(err.^2,1));
-
 endfunction
 
 function f = stats_mode(i)
@@ -23,18 +23,19 @@ function f = stats_mode(i)
 endfunction
 
 // Function to return flags for category of each data point
-function pred = knn(x, y, xtest, k)
+function [pred,dd] = knn(x, y, xtest, k)
     pred = zeros(1,size(xtest,2));
   //   pause
     for cnt = 1:size(xtest,2)
   //      disp(cnt);
         dist = getDistance(x, xtest(:,cnt));
+        dd(:,cnt) = dist;
         [V,i] = gsort(dist,'g','i');    
         f = stats_mode(y(i(1:k)));
         //pred(cnt) = y(f);
         pred(cnt) = f;
     end
-
+   // disp(dist);
 
 endfunction
 
