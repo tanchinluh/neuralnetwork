@@ -45,11 +45,14 @@ Changes on 22/12/2014
 Version 2.0
 	1. First public release
 
-Version 2.1
+Version 2.1 (Not Published)
 	1. Add knn and other new functions under "new" folder
 	2. Add new training method base on Andrew Ng's Class
 	3. Change training progress results to show on console instead of GUI
 
-
+Version 3.0 (27/05/2020)
+	1. Update Documentation
+	2. Update new training method base on Andrew Ng's Class
+	3. Change training progress results to show on console instead of GUI to fit to use with Jupyter
 
 -- Author <tanchinluh@gmail.com>  Tues, 4 October 2011

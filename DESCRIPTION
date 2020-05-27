@@ -4,9 +4,9 @@ Title: Scilab Neural Network Module
 
 Summary: This is a Scilab Neural Network Module which covers supervised and unsupervised training algorithms
 
-Version: 2.1
+Version: 3.0
 
-Date: 2019-10-15
+Date: 2020-05-27
 
 Author: Tan Chin Luh <chinluh.tan@bytecode-asia.com>
 
@@ -22,7 +22,7 @@ URL: https://www.bytecode-asia.com/
 
 License: GPL (>=2)
 
-ScilabVersion: >= 6.0
+ScilabVersion: >= 6.1
 
 Depends: 
 

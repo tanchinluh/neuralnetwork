@@ -1,4 +1,50 @@
-function [net] = initialize_parameters(N,r,af,lr,costfn,l2,mini_batch,cost_type)
+function [net] = initialize_parameters(N,r,af,lr,cost_type,l2,mini_batch)
+    // Initialize Network Object for Feed-forward Back-Propagation Network (New)
+    //
+    //    Copyright 2020 ByteCode.
+    //    
+    //    This program is free software: you can redistribute it and/or modify
+    //    it under the terms of the GNU General Public License as published by
+    //    the Free Software Foundation, either version 2 of the License, or
+    //    (at your option) any later version.
+    //    
+    //    This program is distributed in the hope that it will be useful,
+    //    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    //    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    //    GNU General Public License for more details.
+    //    
+    //    You should have received a copy of the GNU General Public License
+    //    along with this program.  If not, see <http://www.gnu.org/licenses/
+    //
+    // Calling Sequence
+    //     [net] = initialize_parameters(N)
+    //     [net] = initialize_parameters(N,r,af,lr,costfn,l2,mini_batch,cost_type)
+    //
+    // Parameters
+    //     N : Network topology, in 1 x m layers including input and output layers, [Input layer nodes, Hidden layer nodes, Output layer nodes]. If the network is more than one hidden layer, repeat with another number in the "Hidden layer nodes" part.  
+    //     r : Range of the weights initial values
+    //     af : Activation functions for each layers
+    //     lr : Learning rate
+    //     cost_type : Function to calculate cost, currently support "mse", "crossentropy", "categorical_crossentropy"
+    //     l2 : L2 regularization 
+    //     mini_batch : Minibatch size
+    //
+    // Description
+    //    Initialize Network Object for Feed-forward Back-Propagation Network Base on Andrew Ng's Coursera Deep-Learning Specialization Course.
+    //    
+    // Examples
+    //    net = initialize_parameters([3 10 2]);
+    // 
+    // See also
+    //     nn_train
+    //     nn_onehot
+    //     nn_split_data
+    //     nn_eval_performance
+    //     model_forward
+    //
+    // Authors
+    //     Tan C.L. 
+        
 //    """
 //    Argument:
 //    n_x -- size of the input layer
@@ -33,19 +79,19 @@ end;
 
 //lr,costfn,l2)
 if rhs<4 then lr = 0.1; end;
-if rhs<5 then costfn = 'cross_entropy'; end;
+if rhs<5 then cost_type = 'categorical_crossentropy'; end;
 if rhs<6 then l2 = 0.01; end;
 if rhs<7 then mini_batch = 0; end;
-if rhs<8 then cost_type = 'categorical_crossentropy'; end;
+//if rhs<8 then cost_type = 'categorical_crossentropy'; end;
 
 
 if r==[] then r = [-0.01,0.01];end;
 if af==[] then af = ["ann_relu","ann_logsig"];end;
 if lr==[] then lr = 0.1; end;
-if costfn==[] then costfn = 'cross_entropy'; end;
+if cost_type==[] then costfn = 'categorical_crossentropy'; end;
 if l2==[] then l2 = 0.01; end;
 if mini_batch==[] then mini_batch = 0; end;
-if cost_type==[] then cost_type = 'categorical_crossentropy'; end;
+//if cost_type==[] then cost_type = 'categorical_crossentropy'; end;
 
 W = list(0);
 b = list(0);
@@ -59,7 +105,7 @@ net.b = b;
 net.af = af;
 net.l2 = l2;
 net.lr = lr;
-net.costfn = costfn;
+//net.costfn = costfn;
 net.mini_batch = mini_batch;
 net.cost_type = cost_type;
 //    assert(W1.shape == (n_h, n_x))

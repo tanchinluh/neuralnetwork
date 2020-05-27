@@ -13,7 +13,7 @@
   <macro name="ann_FFBP_gdm" file="ann_FFBP_gdm.bin" md5="60e816ef2821075b8d7722748f0261ee"/>
   <macro name="ann_FFBP_gdx" file="ann_FFBP_gdx.bin" md5="1c7d63975e5e5de48647d260bb149b83"/>
   <macro name="ann_FFBP_lm" file="ann_FFBP_lm.bin" md5="a580c9aa78b74c70166e2c7a3449e2e7"/>
-  <macro name="ann_FFBP_run" file="ann_FFBP_run.bin" md5="c567466b19b6826e3e4ba26ea6d17244"/>
+  <macro name="ann_FFBP_run" file="ann_FFBP_run.bin" md5="3f5711b46619a5d5aa1559582364c5f1"/>
   <macro name="ann_FFBP_sim" file="ann_FFBP_sim.bin" md5="dcd7a33a14174c285a19ec26351b8dc1"/>
   <macro name="ann_LVQ1" file="ann_LVQ1.bin" md5="0664f8af8b6301d6179c836e7402c57a"/>
   <macro name="ann_LVQ_run" file="ann_LVQ_run.bin" md5="b4d01975bc08078f346b68b01b0615af"/>

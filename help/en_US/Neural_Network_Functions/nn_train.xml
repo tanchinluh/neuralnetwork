@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from nn_train.sci using help_from_sci().
+ *
+ -->
+
+<refentry version="5.0-subset Scilab" xml:id="nn_train" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:scilab="http://www.scilab.org"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <refnamediv>
+    <refname>nn_train</refname>
+    <refpurpose>Feed-forward Back-Propagation Network (New)</refpurpose>
+  </refnamediv>
+
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+        <varlistentry>
+            <term>net :</term>
+            <listitem><para> Network object which contains the parameters of the network created and trained.</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>X :</term>
+            <listitem><para> Training data, in m x n matrix, where m is the features, n is different datasets</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Y :</term>
+            <listitem><para> Target data, in 1 x n vector, where the value shall be the classes which correspond to each set of data in x</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>num_iterations :</term>
+            <listitem><para> Iteration to run</para></listitem>
+        </varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+Feed-forward Back-Propagation Network Base on Andrew Ng's Coursera Deep-Learning Specialization Course.
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+P = [1 2 3 4; 1 2 3 4]./2 - 1; // Simple Normalization
+Tc = [1 2 3 4];
+T = nn_onehot(Tc); // Convert to one-hot encoding
+N = [2,3,4];
+af = ['ann_relu','ann_softmax'];
+num_iterations = 200;
+net = initialize_parameters(N,[-0.01,0.01],af);
+net.mini_batch = 1;
+net.cost_type = 'categorical_crossentropy';
+net.lr = 0.05;
+net.l2 = 0.01;
+net = nn_train(net,P,T,num_iterations);
+y = model_forward(P, net);
+[maxV, maxI] = max(y,'r')
+disp(maxI);
+
+   ]]></programlisting>
+</refsection>
+
+<refsection role="see also">
+   <title>See also</title>
+   <simplelist type="inline">
+   <member><link linkend="initialize_parameters">initialize_parameters</link></member>
+   <member><link linkend="nn_onehot">nn_onehot</link></member>
+   <member><link linkend="nn_split_data">nn_split_data</link></member>
+   <member><link linkend="nn_eval_performance">nn_eval_performance</link></member>
+   <member><link linkend="model_forward">model_forward</link></member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Tan C.L.</member>
+   </simplelist>
+</refsection>
+</refentry>

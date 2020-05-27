@@ -2,13 +2,15 @@
 <!DOCTYPE map PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Map Version 1.0//EN" "http://java.sun.com/products/javahelp/map_1_0.dtd">
 <map version="1.0">
 <mapID target="index" url="index.html"/>
-<mapID target="section_629fe2362772f7d67f32a33d3140e5df" url="section_629fe2362772f7d67f32a33d3140e5df.html"/>
+<mapID target="section_648929b5139fa891d8c14ba87a7683a8" url="section_648929b5139fa891d8c14ba87a7683a8.html"/>
 <mapID target="ann_calcjac" url="ann_calcjac.html"/>
 <mapID target="ann_compet_activ" url="ann_compet_activ.html"/>
 <mapID target="ann_compet_init" url="ann_compet_init.html"/>
 <mapID target="ann_d_hardlim_activ" url="ann_d_hardlim_activ.html"/>
 <mapID target="ann_d_logsig_activ" url="ann_d_logsig_activ.html"/>
 <mapID target="ann_d_purelin_activ" url="ann_d_purelin_activ.html"/>
+<mapID target="ann_d_relu_activ" url="ann_d_relu_activ.html"/>
+<mapID target="ann_d_softmax_activ" url="ann_d_softmax_activ.html"/>
 <mapID target="ann_d_tansig_activ" url="ann_d_tansig_activ.html"/>
 <mapID target="ann_dist" url="ann_dist.html"/>
 <mapID target="ann_ffbp_init" url="ann_ffbp_init.html"/>
@@ -17,6 +19,8 @@
 <mapID target="ann_logsig_activ" url="ann_logsig_activ.html"/>
 <mapID target="ann_negdist" url="ann_negdist.html"/>
 <mapID target="ann_purelin_activ" url="ann_purelin_activ.html"/>
+<mapID target="ann_relu_activ" url="ann_relu_activ.html"/>
+<mapID target="ann_softmax_activ" url="ann_softmax_activ.html"/>
 <mapID target="ann_som_boxdist" url="ann_som_boxdist.html"/>
 <mapID target="ann_som_eudist" url="ann_som_eudist.html"/>
 <mapID target="ann_som_gridtop" url="ann_som_gridtop.html"/>
@@ -26,7 +30,7 @@
 <mapID target="ann_som_randtop" url="ann_som_randtop.html"/>
 <mapID target="ann_tansig_activ" url="ann_tansig_activ.html"/>
 <mapID target="ann_training_process" url="ann_training_process.html"/>
-<mapID target="section_67e9f607317ce381f39de0475e185493" url="section_67e9f607317ce381f39de0475e185493.html"/>
+<mapID target="section_ce6868e1fa7759305cd56b64bf8b0213" url="section_ce6868e1fa7759305cd56b64bf8b0213.html"/>
 <mapID target="ann_ADALINE" url="ann_ADALINE.html"/>
 <mapID target="ann_ADALINE_online" url="ann_ADALINE_online.html"/>
 <mapID target="ann_ADALINE_predict" url="ann_ADALINE_predict.html"/>
@@ -53,15 +57,23 @@
 <mapID target="ann_SOM_visualize2d" url="ann_SOM_visualize2d.html"/>
 <mapID target="ann_SOM_visualize3d" url="ann_SOM_visualize3d.html"/>
 <mapID target="ann_getToolboxPath" url="ann_getToolboxPath.html"/>
-<mapID target="section_2a786a68237e7127c4090927ab048405" url="section_2a786a68237e7127c4090927ab048405.html"/>
+<mapID target="initialize_parameters" url="initialize_parameters.html"/>
+<mapID target="knn" url="knn.html"/>
+<mapID target="model_forward" url="model_forward.html"/>
+<mapID target="nn_eval_performance" url="nn_eval_performance.html"/>
+<mapID target="nn_onehot" url="nn_onehot.html"/>
+<mapID target="nn_split_data" url="nn_split_data.html"/>
+<mapID target="nn_train" url="nn_train.html"/>
+<mapID target="section_81da308bef0755c64f34797e6914f765" url="section_81da308bef0755c64f34797e6914f765.html"/>
 <mapID target="ann_imgcrop" url="ann_imgcrop.html"/>
 <mapID target="ann_imgfeatures" url="ann_imgfeatures.html"/>
 <mapID target="ann_imgpreprocess" url="ann_imgpreprocess.html"/>
-<mapID target="section_e39a419e5abb1e89d4b3d3a4ffe04484" url="section_e39a419e5abb1e89d4b3d3a4ffe04484.html"/>
+<mapID target="section_29f1b385f30151c5d0ba3e00f1ca8d5d" url="section_29f1b385f30151c5d0ba3e00f1ca8d5d.html"/>
 <mapID target="ann_som_plot2d" url="ann_som_plot2d.html"/>
 <mapID target="ann_som_plot3d" url="ann_som_plot3d.html"/>
 <mapID target="plot3dot" url="plot3dot.html"/>
 <mapID target="plot_2group" url="plot_2group.html"/>
+<mapID target="plot_boundary" url="plot_boundary.html"/>
 <mapID target="plot_weight" url="plot_weight.html"/>
 <mapID target="plotchar" url="plotchar.html"/>
 <mapID target="plotchar53" url="plotchar53.html"/>

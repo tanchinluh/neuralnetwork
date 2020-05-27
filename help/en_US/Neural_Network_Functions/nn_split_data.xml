@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from nn_split_data.sci using help_from_sci().
+ *
+ -->
+
+<refentry version="5.0-subset Scilab" xml:id="nn_split_data" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:scilab="http://www.scilab.org"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <refnamediv>
+    <refname>nn_split_data</refname>
+    <refpurpose>Split the data into training and testing dataset</refpurpose>
+  </refnamediv>
+
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+        <varlistentry>
+            <term>P :</term>
+            <listitem><para> Input data</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>T :</term>
+            <listitem><para> Target data</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>test_ratio :</term>
+            <listitem><para> Ratio for testing dataset, from 0 - 1</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>seed :</term>
+            <listitem><para> Random seed</para></listitem>
+        </varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+This function used to split the data into training and testing dataset.
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+P = [1 2 3 4; 1 2 3 4]./2 - 1; // Simple Normalization
+Tc = [1 2 3 4];
+T = nn_onehot(Tc); // Convert to one-hot encoding
+[P_train, T_train, P_test, T_test] = nn_split_data(P,T,0.25,3);
+
+   ]]></programlisting>
+</refsection>
+
+<refsection role="see also">
+   <title>See also</title>
+   <simplelist type="inline">
+   <member><link linkend="nn_train">nn_train</link></member>
+   <member><link linkend="initialize_parameters">initialize_parameters</link></member>
+   <member><link linkend="nn_onehot">nn_onehot</link></member>
+   <member><link linkend="nn_eval_performance">nn_eval_performance</link></member>
+   <member><link linkend="model_forward">model_forward</link></member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Tan C.L.</member>
+   </simplelist>
+</refsection>
+</refentry>

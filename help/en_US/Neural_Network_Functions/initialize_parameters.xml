@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from initialize_parameters.sci using help_from_sci().
+ *
+ -->
+
+<refentry version="5.0-subset Scilab" xml:id="initialize_parameters" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:scilab="http://www.scilab.org"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <refnamediv>
+    <refname>initialize_parameters</refname>
+    <refpurpose>Initialize Network Object for Feed-forward Back-Propagation Network (New)</refpurpose>
+  </refnamediv>
+
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+        <varlistentry>
+            <term>N :</term>
+            <listitem><para> Network topology, in 1 x m layers including input and output layers, [Input layer nodes, Hidden layer nodes, Output layer nodes]. If the network is more than one hidden layer, repeat with another number in the "Hidden layer nodes" part.</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>r :</term>
+            <listitem><para> Range of the weights initial values</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>af :</term>
+            <listitem><para> Activation functions for each layers</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>lr :</term>
+            <listitem><para> Learning rate</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>cost_type :</term>
+            <listitem><para> Function to calculate cost, currently support "mse", "crossentropy", "categorical_crossentropy"</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>l2 :</term>
+            <listitem><para> L2 regularization</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>mini_batch :</term>
+            <listitem><para> Minibatch size</para></listitem>
+        </varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+Initialize Network Object for Feed-forward Back-Propagation Network Base on Andrew Ng's Coursera Deep-Learning Specialization Course.
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+net = initialize_parameters([3 10 2]);
+
+   ]]></programlisting>
+</refsection>
+
+<refsection role="see also">
+   <title>See also</title>
+   <simplelist type="inline">
+   <member><link linkend="nn_train">nn_train</link></member>
+   <member><link linkend="nn_onehot">nn_onehot</link></member>
+   <member><link linkend="nn_split_data">nn_split_data</link></member>
+   <member><link linkend="nn_eval_performance">nn_eval_performance</link></member>
+   <member><link linkend="model_forward">model_forward</link></member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Tan C.L.</member>
+   </simplelist>
+</refsection>
+</refentry>

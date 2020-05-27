@@ -28,3 +28,9 @@ Version 1.3
 
 Version 2.0
 1. First public release
+
+Version 2.1
+1. Not released
+
+Version 3.0
+1. Public release for Scilab V6.1

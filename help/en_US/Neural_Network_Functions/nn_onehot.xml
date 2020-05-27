@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from nn_onehot.sci using help_from_sci().
+ *
+ -->
+
+<refentry version="5.0-subset Scilab" xml:id="nn_onehot" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:scilab="http://www.scilab.org"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <refnamediv>
+    <refname>nn_onehot</refname>
+    <refpurpose>One-hot Encoding</refpurpose>
+  </refnamediv>
+
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+        <varlistentry>
+            <term>Tin :</term>
+            <listitem><para> Index of classes, starting from 1 to m</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Tout :</term>
+            <listitem><para> One-hot encoding output for Tin, in m x p, where m is the number of classes, and p is the number of datasets</para></listitem>
+        </varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+One-hot Encoding for target data in Feed-forward Back-Propagation Network Base on Andrew Ng's Coursera Deep-Learning Specialization Course.
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+P = [1 2 3 4; 1 2 3 4]./2 - 1; // Simple Normalization
+Tc = [1 2 3 4];
+T = nn_onehot(Tc); // Convert to one-hot encoding
+
+   ]]></programlisting>
+</refsection>
+
+<refsection role="see also">
+   <title>See also</title>
+   <simplelist type="inline">
+   <member><link linkend="nn_train">nn_train</link></member>
+   <member><link linkend="initialize_parameters">initialize_parameters</link></member>
+   <member><link linkend="nn_split_data">nn_split_data</link></member>
+   <member><link linkend="nn_eval_performance">nn_eval_performance</link></member>
+   <member><link linkend="model_forward">model_forward</link></member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Tan C.L.</member>
+   </simplelist>
+</refsection>
+</refentry>

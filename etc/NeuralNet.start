@@ -1,7 +1,7 @@
 
 function [NeuralNet_computelib, NeuralNet_networklib, NeuralNet_visuallib, NeuralNet_utillib,NeuralNet_new] = startModule()
 
-mprintf("START Scilab Neural Network Module 2.1\n");
+mprintf("START Scilab Neural Network Module 3.0\n");
 
 if isdef("NeuralNet_computelib") then
 	warning("Neural Network library is already loaded");

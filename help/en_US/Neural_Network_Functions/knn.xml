@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from knn.sci using help_from_sci().
+ *
+ -->
+
+<refentry version="5.0-subset Scilab" xml:id="knn" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:scilab="http://www.scilab.org"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <refnamediv>
+    <refname>knn</refname>
+    <refpurpose>K Nearest neighbours classification</refpurpose>
+  </refnamediv>
+
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+        <varlistentry>
+            <term>x :</term>
+            <listitem><para> Input data, in m x n matrix, where m is the features, n is different datasets</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>y :</term>
+            <listitem><para> Target data, in 1 x n vector, where the value shall be the classes which correspond to each set of data in x</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>xtest :</term>
+            <listitem><para> Data undertest, in m x p, where m must be the same number of features, p is any set of data to be tested.</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>k :</term>
+            <listitem><para> Number of neighbours to be compare</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>pred :</term>
+            <listitem><para> Predicted class for xtest</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>dd :</term>
+            <listitem><para> Distance of the xtests to each classes</para></listitem>
+        </varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+K Nearest neighbours classification
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+P = [1 2 3 4; 1 2 3 4];
+T = [1 2 3 4];
+[pred,dd] = knn(P, T, [1.2 ; 1.2], 1);
+disp("Predicted Class : " + string(pred));
+disp("Distance from Class " + string([1:4]') + " : "  + string(dd));
+
+   ]]></programlisting>
+</refsection>
+
+<refsection role="see also">
+   <title>See also</title>
+   <simplelist type="inline">
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Tan C.L.</member>
+   </simplelist>
+</refsection>
+</refentry>
