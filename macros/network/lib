@@ -20,10 +20,10 @@
   <macro name="ann_PERCEPTRON" file="ann_PERCEPTRON.bin" md5="aa44cc65d956eeb7a2a48d2c115ec7e0"/>
   <macro name="ann_PERCEPTRON_run" file="ann_PERCEPTRON_run.bin" md5="dc125968d624503a204f14205670d249"/>
   <macro name="ann_PERCEPTRON_visualize" file="ann_PERCEPTRON_visualize.bin" md5="eea078674e6279e994437140ad3ebc7e"/>
-  <macro name="ann_SOM" file="ann_SOM.bin" md5="0751c9f82990f60deeb0e8e8fe40e529"/>
-  <macro name="ann_SOM_online" file="ann_SOM_online.bin" md5="9438f1521876eaa58dd463494c21f735"/>
+  <macro name="ann_SOM" file="ann_SOM.bin" md5="b33424d9967e9016f51134c3460f4a41"/>
+  <macro name="ann_SOM_online" file="ann_SOM_online.bin" md5="823041e27b0b9254dc440eea66d62db4"/>
   <macro name="ann_SOM_run" file="ann_SOM_run.bin" md5="9c7a215d9529410d7f560121a3df56f5"/>
-  <macro name="ann_SOM_visualize2d" file="ann_SOM_visualize2d.bin" md5="8cdbbec2e0a1ecdc3434d944ee6c84be"/>
-  <macro name="ann_SOM_visualize3d" file="ann_SOM_visualize3d.bin" md5="8d05779af903eb2766b614ea8904b21f"/>
+  <macro name="ann_SOM_visualize2d" file="ann_SOM_visualize2d.bin" md5="8090821e1dfd1c4e94cf58fd6909adcf"/>
+  <macro name="ann_SOM_visualize3d" file="ann_SOM_visualize3d.bin" md5="46661cb1cc1200887961d26e60797377"/>
   <macro name="ann_getToolboxPath" file="ann_getToolboxPath.bin" md5="1b20c0db4f7960c76bab6d9d337193eb"/>
 </scilablib>

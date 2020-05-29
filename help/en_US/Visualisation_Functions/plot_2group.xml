@@ -22,9 +22,10 @@
 
 
 <refsynopsisdiv>
-   <title>Calling Sequence</title>
+   <title>Syntax</title>
    <synopsis>
    plot_2group(p,t)
+   plot_2group(p,t,marker0, marker1)
    
    </synopsis>
 </refsynopsisdiv>
@@ -32,10 +33,22 @@
 <refsection>
    <title>Parameters</title>
    <variablelist>
-   <varlistentry><term>p :</term>
-      <listitem><para> 2-D data, with x and y, each column build up 1 set of data</para></listitem></varlistentry>
-   <varlistentry><term>t :</term>
-      <listitem><para> Target group, strictly 0 and 1 for the plot function to plot correctly</para></listitem></varlistentry>
+        <varlistentry>
+            <term>p :</term>
+            <listitem><para> 2-D data, with x and y, each column build up 1 set of data</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>t :</term>
+            <listitem><para> Target group, strictly 0 and 1 for the plot function to plot correctly</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>marker0 :</term>
+            <listitem><para> Marker color and type for group 0</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>marker1 :</term>
+            <listitem><para> Marker color and type for group 1</para></listitem>
+        </varlistentry>
    </variablelist>
 </refsection>
 

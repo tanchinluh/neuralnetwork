@@ -8,14 +8,14 @@ files_Network = findfiles(pMacrosNetwork, '*.sci');
 //for i = 1:size(files_Network, '*')
 //    help_from_sci(pMacrosNetwork + filesep() + 'ann_FFBP_lm.sci', pHelpNetwork);
 //end
-pMacrosNew = fullpath(current_path + '/new');
-help_from_sci(pMacrosNew + filesep() + 'knn.sci', pHelpNetwork);
-help_from_sci(pMacrosNew + filesep() + 'nn_train.sci', pHelpNetwork);
-help_from_sci(pMacrosNew + filesep() + 'initialize_parameters.sci', pHelpNetwork);
-help_from_sci(pMacrosNew + filesep() + 'nn_onehot.sci', pHelpNetwork);
-help_from_sci(pMacrosNew + filesep() + 'nn_split_data.sci', pHelpNetwork);
-help_from_sci(pMacrosNew + filesep() + 'nn_eval_performance.sci', pHelpNetwork);
-help_from_sci(pMacrosNew + filesep() + 'model_forward.sci', pHelpNetwork);
+//pMacrosNew = fullpath(current_path + '/new');
+//help_from_sci(pMacrosNew + filesep() + 'knn.sci', pHelpNetwork);
+//help_from_sci(pMacrosNew + filesep() + 'nn_train.sci', pHelpNetwork);
+//help_from_sci(pMacrosNew + filesep() + 'initialize_parameters.sci', pHelpNetwork);
+//help_from_sci(pMacrosNew + filesep() + 'nn_onehot.sci', pHelpNetwork);
+//help_from_sci(pMacrosNew + filesep() + 'nn_split_data.sci', pHelpNetwork);
+//help_from_sci(pMacrosNew + filesep() + 'nn_eval_performance.sci', pHelpNetwork);
+//help_from_sci(pMacrosNew + filesep() + 'model_forward.sci', pHelpNetwork);
 //pMacrosNew = fullpath(current_path + '/new');
 //pHelpNew = fullpath(current_path + '/../help/en_US/New_Functions');
 //files_New = findfiles(pMacrosNew, '*.sci');
@@ -40,6 +40,7 @@ files_Visualisation = findfiles(pMacrosVisualisation, '*.sci');
 //for i = 1:size(files_Visualisation, '*')
 //    help_from_sci(pMacrosVisualisation + filesep() + files_Visualisation(i), pHelpVisualisation);
 //end
+help_from_sci(pMacrosVisualisation + filesep() + 'plot_2group.sci', pHelpVisualisation);
 
 // Build all
 cd(fullpath(current_path + '/..'));

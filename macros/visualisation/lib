@@ -3,7 +3,7 @@
   <macro name="ann_som_plot2d" file="ann_som_plot2d.bin" md5="e8543d4ddf2ab2d2e2f71fe39e3d61ed"/>
   <macro name="ann_som_plot3d" file="ann_som_plot3d.bin" md5="c3c5240add91e252bc09b7ec2ebc955d"/>
   <macro name="plot3dot" file="plot3dot.bin" md5="983e397ff63785851096b64c4b626b1f"/>
-  <macro name="plot_2group" file="plot_2group.bin" md5="0842c908949f0c8560740d3eecf9aa18"/>
+  <macro name="plot_2group" file="plot_2group.bin" md5="917f23565939a78585b5a7253a1c65e5"/>
   <macro name="plot_boundary" file="plot_boundary.bin" md5="bb5ce1d7f93ce00ebda4873f45cab19b"/>
   <macro name="plot_weight" file="plot_weight.bin" md5="a13888389628b78bb68e35a2d24725f0"/>
   <macro name="plotchar" file="plotchar.bin" md5="e416cee55be13c2917cf4e8bce46ac35"/>

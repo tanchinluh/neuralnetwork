@@ -48,7 +48,7 @@ function W = ann_SOM_visualize3d(P,N,itermax,steps,NS,topfcn,distfcn)
 //     Tan C.L. 
 
 rhs=argn(2);
-
+warning('off')
 // Error Checking
 if rhs < 1; error("Expect at least 1 argument, P");end
 if rhs < 2; N=[8,8]; end
@@ -95,18 +95,18 @@ W(isnan(W)) = 0;
 //W=ann_compet_init(P,S);pause
 
 // Initialize Training Progress GUI
-handles = ann_training_process();
-handles.itermax.string = string(itermax);
-handles.msecurrent.visible = 'off';
-handles.msemin.visible = 'off';
-handles.msemax.visible = 'off';
-handles.mse.visible = 'off';
-handles.msetitle.visible = 'off';
-handles.gdcurrent.visible = 'off';
-handles.gdmin.visible = 'off';
-handles.gdmax.visible = 'off';
-handles.gd.visible = 'off';
-handles.gdtitle.visible = 'off';
+//handles = ann_training_process();
+//handles.itermax.string = string(itermax);
+//handles.msecurrent.visible = 'off';
+//handles.msemin.visible = 'off';
+//handles.msemax.visible = 'off';
+//handles.mse.visible = 'off';
+//handles.msetitle.visible = 'off';
+//handles.gdcurrent.visible = 'off';
+//handles.gdmin.visible = 'off';
+//handles.gdmax.visible = 'off';
+//handles.gd.visible = 'off';
+//handles.gdtitle.visible = 'off';
 
 for itercnt=1:itermax
 
@@ -165,9 +165,9 @@ for itercnt=1:itermax
 
     W = W + dw;
     
-    handles.iter.value = round((itercnt/iter_span)*100);
-    handles.itercurrent.string = string(itercnt);
-
+//    handles.iter.value = round((itercnt/iter_span)*100);
+//    handles.itercurrent.string = string(itercnt);
+     mprintf('Epoch %3i / %i\n',itercnt,itermax);
 end
 
 

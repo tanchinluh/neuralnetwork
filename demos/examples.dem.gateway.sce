@@ -10,7 +10,7 @@ function subdemolist = ann_examples_gateway()
                  "Classification using Competitive Network", "NN4_exam1.sce"; ..
                  "3D Classification", "NN4_exam2.sce"; ..
                  "Creating and Training the SOM", "NN4_exam3.sce"; ..
-                 "Classification using LVQ Network", "NN4_exam3.sce"]s; 
+                 "Classification using LVQ Network", "NN4_exam3.sce"]; 
                  
   subdemolist(:,2) = ann_getToolboxPath() + "/demos/examples/" + subdemolist(:,2);
   
